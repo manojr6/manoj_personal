@@ -1,0 +1,288 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jul 12 20:26:48 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>413 seconds (413925 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.runnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.runnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check LOGIN", "'When I try to login, page should get logged in and title should display,"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2070438137", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2070438137'><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div></td>
+<td>67</td>
+<td>runner.runnerClass@48e1f6c7</td></tr>
+<tr>
+<td title='runner.runnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.runnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check LOGIN", "'When I try to login, page should get logged in and title should display,"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1002400446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1002400446'><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div></td>
+<td>58</td>
+<td>runner.runnerClass@48e1f6c7</td></tr>
+<tr>
+<td title='runner.runnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.runnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check LOGIN", "'When I try to login, page should get logged in and title should display,"</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;MANOJ&apos;, ip: &apos;192.168.43.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05220]
+	(No symbol) [0x00AFB355]
+	(No symbol) [0x00B25C68]
+	(No symbol) [0x00B21EF3]
+	(No symbol) [0x00B20579]
+	(No symbol) [0x00B50C55]
+	(No symbol) [0x00B5093C]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x75D400C9+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.checkLoginDefinitions.thatIHaveGoneToTheOPENHRMPage(checkLoginDefinitions.java:21)
+	at ?.that I have gone to the OPENHRM page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace609825180", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace609825180'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;MANOJ&apos;, ip: &apos;192.168.43.97&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	GetHandleVerifier [0x00C6A813+48355]
+	(No symbol) [0x00BFC4B1]
+	(No symbol) [0x00B05220]
+	(No symbol) [0x00AFB355]
+	(No symbol) [0x00B25C68]
+	(No symbol) [0x00B21EF3]
+	(No symbol) [0x00B20579]
+	(No symbol) [0x00B50C55]
+	(No symbol) [0x00B5093C]
+	(No symbol) [0x00B4A536]
+	(No symbol) [0x00B282DC]
+	(No symbol) [0x00B293DD]
+	GetHandleVerifier [0x00ECAABD+2539405]
+	GetHandleVerifier [0x00F0A78F+2800735]
+	GetHandleVerifier [0x00F0456C+2775612]
+	GetHandleVerifier [0x00CF51E0+616112]
+	(No symbol) [0x00C05F8C]
+	(No symbol) [0x00C02328]
+	(No symbol) [0x00C0240B]
+	(No symbol) [0x00BF4FF7]
+	BaseThreadInitThunk [0x75D400C9+25]
+	RtlGetAppContainerNamedObjectPath [0x774E7B4E+286]
+	RtlGetAppContainerNamedObjectPath [0x774E7B1E+238]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at stepDefinitions.checkLoginDefinitions.thatIHaveGoneToTheOPENHRMPage(checkLoginDefinitions.java:21)
+	at ?.that I have gone to the OPENHRM page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:5)
+</pre></div></td>
+<td>69</td>
+<td>runner.runnerClass@48e1f6c7</td></tr>
+<tr>
+<td title='runner.runnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.runnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check LOGIN", "'When I try to login, page should get logged in and title should display,"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace645777794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645777794'><pre>java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login] but found [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at stepDefinitions.checkLoginDefinitions.loginShouldHappenAndShouldGetFecthedCorrectlyInThePage(checkLoginDefinitions.java:48)
+	at ?.login should happen and &quot;https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index&quot; should get fecthed correctly in the page(file:///C:/Users/user/eclipse-workspace/CucumberPractice/src/test/java/featureFiles/checkLogin.feature:9)
+</pre></div></td>
+<td>54</td>
+<td>runner.runnerClass@48e1f6c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.runnerClass.runScenario()'><b>runScenario</b><br>Test class: runner.runnerClass<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check LOGIN", "'When I try to login, page should get logged in and title should display,"</td>
+<td></td>
+<td>149</td>
+<td>runner.runnerClass@48e1f6c7</td></tr>
+</table><p>
+</body>
+</html>

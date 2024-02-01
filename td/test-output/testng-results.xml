@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-27T18:21:39 IST" name="Default suite" finished-at="2023-07-27T18:23:36 IST" duration-ms="117409">
+    <groups>
+    </groups>
+    <test started-at="2023-07-27T18:21:39 IST" name="Default test" finished-at="2023-07-27T18:23:36 IST" duration-ms="117409">
+      <class name="tdAssessment.amazonApp">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tdAssessment.amazonApp@3ee37e5a]" started-at="2023-07-27T18:21:39 IST" name="beforeTest" finished-at="2023-07-27T18:22:17 IST" duration-ms="38138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Test()[pri:0, instance:tdAssessment.amazonApp@3ee37e5a]" started-at="2023-07-27T18:22:18 IST" name="Test" finished-at="2023-07-27T18:23:34 IST" duration-ms="75806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tdAssessment.amazonApp@3ee37e5a]" started-at="2023-07-27T18:23:34 IST" name="afterTest" finished-at="2023-07-27T18:23:36 IST" duration-ms="2847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tdAssessment.amazonApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
