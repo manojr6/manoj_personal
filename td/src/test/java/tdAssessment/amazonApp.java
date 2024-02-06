@@ -26,7 +26,7 @@ public class amazonApp
 
 	WebDriver driver;
 	baseClass base = new baseClass();
-	amazonImplementation amazonImplementation = new amazonImplementation();
+	amazonImplementation amazonImplementation1 = new amazonImplementation();
 
 
 	@BeforeTest
